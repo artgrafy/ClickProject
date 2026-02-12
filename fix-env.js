@@ -1,8 +1,8 @@
 const { execSync } = require('child_process');
 
 const vars = {
-    NEXT_PUBLIC_SUPABASE_URL: "https://aarsgtcmhdjqwrvqvfem.supabase.co",
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhcnNndGNtaGRqcXdydnF2ZmVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAyODM0NTUsImV4cCI6MjA4NTg1OTQ1NX0.Ot-Vm5xCqo1RMYLC3I4ZPGareP4aLImhndqc8NK4Ruw"
+    NEXT_PUBLIC_SUPABASE_URL: "https://jftsdfkohskbuunptkrh.supabase.co",
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpmdHNkZmtvaHNrYnV1bnB0a3JoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAxNTYxNTcsImV4cCI6MjA4NTczMjE1N30.VD8PzyAkZY-XZlT-mNFLYmTLHTBv6BYKY8J7T5RPWN0"
 };
 
 for (const [name, value] of Object.entries(vars)) {
