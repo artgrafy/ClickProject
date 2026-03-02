@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClickBlog - AI 자동화 블로그 빌더",
-  description: "당신의 아이디어를 수익형 블로그로 자동 변환하세요.",
+  title: "ClickProject - AI 기반 R&D 사업계획서 자동 완성 솔루션",
+  description: "정부 지원 사업, 연구 개발 과제 사업계획서를 AI가 전문적으로 작성해 드립니다.",
 };
 
 export default function RootLayout({
@@ -24,14 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" data-theme="light">
+    <html lang="ko" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-base-100 flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-slate-950 flex flex-col`}
       >
         <Navigation />
-        <main className="flex-grow pt-16 pb-20 lg:pb-0">
+        <main className="flex-grow pt-16">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
